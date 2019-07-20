@@ -4,7 +4,7 @@ In first place, MAIRA has been developed to support the portable ONT (Oxford Nan
 
 # Getting started
 
-As MAIRA is written in Java, installing the program can be done quite easily through one of its installer programs (see next section). If your operting system is LINUX you should double check if you are running the Java runtime environment version 12 (or later). Otherwise you do not have to care aout your Java version.
+As MAIRA is written in Java, installing the program can be done quite easily through one of its installer programs (see next section). If your operating system is LINUX you should double check if you are running the Java runtime environment version 12 (or later). Otherwise you do not have to care on that.
 
 Upon startup, MAIRA will first load its own version of the NCBI taxonomy tree (which takes a couple of seconds). Once being initialized, MAIRA is ready to kick off an analysis of long-read data. To produce good results, keep in mind that your reads should have an average read length of at least 3000bp. 
 
@@ -13,9 +13,9 @@ There are three different ways the read data can be provided to MAIRA.
 - Choose "File -> Run on -> FASTA Folder" to analyse all FASTA/FASTQ files of a specific folder.
 - Choose "File -> Run on -> monitored Folder" to automatically analyse all FASTA/FASTQ files being submitted to a specific folder. This is of particular interest for running a real-time analysis of reads produced by an ONT sequencing device (such as an ONT MinION for example).
 
-To kick off the analysis you first have to download MAIRAs specific SQL database (50GB) as well as a set of index files for the aligner you plan to use (300GB).  Here, you can either use our Java-based built-in aligner ELLA or the external aligner LAST (see http://last.cbrc.jp/). ELLA has the advantage that it is ready to run out of the box (which means you do not have to install anything else) whereas LAST has to be configured by your own but in return provides the better runtime. It's up to you!
+To kick off the analysis you first have to download MAIRAs specific SQL database (50GB) as well as a set of index files for the aligner you plan to use (about 200GB).  Here, you can either use our Java-based built-in aligner ELLA or the external aligner LAST (see http://last.cbrc.jp/). ELLA has the advantage that it is ready to run out of the box (which means you do not have to install anything else) whereas LAST has to be configured by your own but in return provides the better runtime. It's up to you!
 
-In the "Advanced" Tab of the setting window you can further specify the sensitivity of the marker database directly affecting the accuracy of the genus classifaction step. Keep in mind that the higher the sensitivity, the larger the size of the marker database gets resulting in an increase of the total runtime. However, to our expericience, the "low" sensitivity version of the marker databse still produces good reliable results. Further, you can specify the size of the read batches being analysed in each cycle. By default this is set to 10,000.
+In the "Advanced" Tab of the setting window you can further specify the sensitivity of the marker database directly affecting the accuracy of the genus classifaction step. Keep in mind that the higher the sensitivity the larger the total runtime gets. To our expericience, the "low" sensitivity version of the marker databse still produces good reliable results. Further, you can specify the size of the read batches being analysed in each cycle. By default this is set to 10,000.
 
 While running, MAIRA continously updates the probabilities of certain genera being present in the underlying read data. To control the runtime, you can choose which genera should be further analysed down to species level. This can be done by setting the traffic lights in the genus table (the table at the top on the left-hand side) to either red, yellow, or green:
 
@@ -23,15 +23,15 @@ While running, MAIRA continously updates the probabilities of certain genera bei
 -  **yellow:** The yellow light means that MAIRA automatically sets the genus to green if its probability is larger than 0.8. In the beginning, all genera are automatically set to yellow.
 - **green:** The green light kicks off an analysis of a genus down to species level. 
 
-MAIRA displays all detected genera and species directly within the NCBI taxonomic tree. You can manipualte the tree by setting specific thresholds to genus and species nodes by opening the "Taxonomy Bar" (at the bottom of the tree pane).
+MAIRA displays all detected genera and species directly within the NCBI taxonomic tree. You can manipualte the appearance of that tree by setting specific thresholds to genus and species nodes by opening the "Taxonomy Bar" at the bottom of the tree pane.
 
-To save your result, you can either just store the tree data ("File -> Save -> Save Tree") or all alignment information ("File -> Save -> Save Project"). Note that so far we have not implemented any export functions. I near future, however, you will be able to extract specific sets of reads and alignments to further analyse your data. 
+To save your result, you can either just store the tree data ("File -> Save -> Save Tree") or all alignment information ("File -> Save -> Save Project"). Note that so far we have not implemented any export functions. In near future, however, you will be able to extract specific sets of reads and alignments to further analyse your data. 
 
 # Installing MAIRA and obtaining databases
 
 MAIRA is written in Java and requires a Java runtime environment version 12 or later, freely available from www.java.org. Note that the Windows and MacOS X installers both contain a bundled JRE and so separate installation of Java should not be necessary for these two operating systems.
 
-To install MAIRA locally on your computer simply choose one of the installer programs from below. During the installing process you will have  to decide how much working memory you want to provide to MAIRA. Notice that this strongly depends on the aligner you plan to use. If you decide to use our built-in aligner ELLA you should provide at least 14GB, otherwise if you decide to use LAST 4GB is enough.
+To install MAIRA locally on your computer simply choose one of the installer programs from below. During the installing process you will have to decide how much working memory you want to provide to MAIRA. Notice that this strongly depends on the aligner you plan to use. If you decide to use our built-in aligner ELLA you should provide at least 14GB, otherwise if you decide to use LAST 4GB should be enough.
 
 - **Windows:** 
 - **Linux:**
