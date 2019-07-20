@@ -25,7 +25,7 @@ While running, MAIRA continously updates the probabilities of certain genera bei
 
 MAIRA displays all detected genera and species directly within the NCBI taxonomic tree. You can manipualte the tree by setting specific thresholds to genus and species nodes by opening the "Taxonomy Bar" (at the bottom of the tree pane).
 
-To save your result, you can either just store the tree data ("File -> Save -> Save Tree") or all alignment information ("File -> Save -> Save Project"). Note that so far we have not implemented any export funcitionalities. I near future, however, you will be able to download specific set of reads and alignments to further analyse your data. 
+To save your result, you can either just store the tree data ("File -> Save -> Save Tree") or all alignment information ("File -> Save -> Save Project"). Note that so far we have not implemented any export functions. I near future, however, you will be able to extract specific sets of reads and alignments to further analyse your data. 
 
 # Installing MAIRA and obtaining databases
 
