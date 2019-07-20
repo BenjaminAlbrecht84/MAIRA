@@ -4,7 +4,7 @@ In first place, MAIRA has been developed to support the portable ONT (Oxford Nan
 
 # Getting started
 
-As MAIRA is written in Java, installing the program can be done quite easily through one of its installer programs (see next section). If your operting system is LINUX you should double check your Java version.
+As MAIRA is written in Java, installing the program can be done quite easily through one of its installer programs (see next section). If your operting system is LINUX you should double check if you are running the Java runtime environment version 12 (or later). Otherwise you do not have to care aout your Java version.
 
 Upon startup, MAIRA will first load its own version of the NCBI taxonomy tree (which takes a couple of seconds). Once being initialized, MAIRA is ready to kick off an analysis of long-read data. To produce good results, keep in mind that your reads should have an average read length of at least 3000bp. 
 
@@ -19,23 +19,31 @@ In the "Advanced" Tab of the setting window you can further specify the sensitiv
 
 While running, MAIRA continously updates the probabilities of certain genera being present in the underlying read data. To control the runtime, you can choose which genera should be further analysed down to species level. This can be done by setting the traffic lights in the genus table (the table at the top on the left-hand side) to either red, yellow, or green:
 
-- **red:** The red light prevents MAIRA from analysing a genus further down to species level. This should be used to avoid runtime spent on genera that are not of deeper interest.
+- **red:** The red light prevents MAIRA from analysing a genus further down to species level. This should be used to avoid spending runtime on genera that are not of deeper interest.
 -  **yellow:** The yellow light means that MAIRA automatically sets the genus to green if its probability is larger than 0.8. In the beginning, all genera are automatically set to yellow.
-- **green:** The green light kicks off an analysis of a genus down to species level. Notice that if 
+- **green:** The green light kicks off an analysis of a genus down to species level. 
 
-# Obtaining and installing MAIRA
+MAIRA displays all detected genera and species directly within the NCBI taxonomic tree. You can manipualte the tree by setting specific thresholds to genus and species nodes by opening the "Taxonomy Bar" (at the bottom of the tree pane).
+
+To save your result, you can either just store the tree data ("File -> Save -> Save Tree") or all alignment information ("File -> Save -> Save Project"). Note that so far we have not implemented any export funcitionalities. I near future, however, you will be able to download specific set of reads and alignments to further analyse your data. 
+
+# Installing MAIRA and obtaining databases
 
 MAIRA is written in Java and requires a Java runtime environment version 12 or later, freely available from www.java.org. Note that the Windows and MacOS X installers both contain a bundled JRE and so separate installation of Java should not be necessary for these two operating systems.
 
-To install MAIRA locally on your computer simply choose one of the following installer programs from below:
+To install MAIRA locally on your computer simply choose one of the installer programs from below. During the installing process you will have  to decide how much working memory you want to provide to MAIRA. Notice that this strongly depends on the aligner you plan to use. If you decide to use our built-in aligner ELLA you should provide at least 14GB, otherwise if you decide to use LAST 4GB is enough.
 
 - **Windows:** 
 - **Linux:**
 - **MacOS X:**  
 
-# Program Overview
+To analyze a set of reads you further have to download the MAIRA database and either our pre-computed ELLA databases or our pre-computed LAST databases.
+
+-**MAIRA database:**
+-**ELLA database:**
+-**LAST databases:**
 
 # Publication
 
-MAIRA hasn't been published yet. Currently, however, we are working hard on several manuscripts, which we hope to get published until the end of 2019. As soon we have any references we will publish those right here on MAIRAs GitHub repository.
+MAIRA hasn't been published yet. Currently, however, we are working hard on several manuscripts, which we hope to get published until the end of 2019. As soon as we have any results we will notify you right here on MAIRAs GitHub repository.
 
