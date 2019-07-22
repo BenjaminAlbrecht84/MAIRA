@@ -33,9 +33,7 @@ MAIRA is written in Java and requires a Java runtime environment version 12 or l
 
 To install MAIRA locally on your computer simply choose one of the installer programs from below. During the installing process you will have to decide how much working memory you want to provide to MAIRA. Notice that this strongly depends on the aligner you plan to use. If you decide to use our built-in aligner ELLA you should provide at least 14GB, otherwise if you decide to use LAST 4GB should be enough.
 
-- **Windows:** 
-- **Linux:**
-- **MacOS X:**  
+- **[MAIRA Installers](http://ab.inf.uni-tuebingen.de/data/software/maira/download/welcome.html)** 
 
 To analyze a set of reads you further have to download the MAIRA database and either our pre-computed ELLA databases or our pre-computed LAST databases.
 
