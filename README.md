@@ -31,17 +31,17 @@ To save your result, you can either just store the tree data ("File -> Save -> S
 
 MAIRA is written in Java and requires a Java runtime environment version 12 or later, freely available from www.java.org. Note that the Windows and MacOS X installers both contain a bundled JRE and so separate installation of Java should not be necessary for these two operating systems.
 
-To install MAIRA locally on your computer simply choose one of the installer programs from below. During the installing process you will have to decide how much working memory you want to provide to MAIRA. Notice that this strongly depends on the aligner you plan to use. If you decide to use our built-in aligner ELLA you should provide at least 14GB, otherwise if you decide to use LAST 4GB should be enough.
+To install MAIRA locally on your computer simply choose an installer program following the weblink below. During the installing process you will have to decide how much working memory you want to provide to MAIRA. Notice that this strongly depends on the aligner you plan to use. If you decide to use our built-in aligner ELLA you should provide at least 14GB, otherwise if you decide to use LAST 4GB should be enough (as LAST we run outside of the VM). If you want to stay flexible and your working device has enough memory (>24GB), we recommend to choose 16GB.
 
-- **[MAIRA Installers](http://ab.inf.uni-tuebingen.de/data/software/maira/download/welcome.html)** 
+**[Download MAIRA Installers](http://ab.inf.uni-tuebingen.de/data/software/maira/download/welcome.html)** 
 
 To analyze a set of reads you further have to download the MAIRA database and either our pre-computed ELLA databases or our pre-computed LAST databases.
 
--**[MAIRA database](http://maira.informatik.uni-tuebingen.de/maira/web_archive/maira.db)**
--**[ELLA database](http://maira.informatik.uni-tuebingen.de/maira/web_archive/ella_aligner_db.zip)**
--**[LAST databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/last_aligner_db.zip)**
+-**[Download MAIRA database](http://maira.informatik.uni-tuebingen.de/maira/web_archive/maira.db)**
+-**[Download ELLA databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/ella_aligner_db.zip)**
+-**[Download LAST databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/last_aligner_db.zip)**
 
 # Publication
 
-MAIRA hasn't been published yet. Currently, however, we are working hard on several manuscripts, which we hope to get published until the end of 2019. As soon as we have any results we will notify you right here on MAIRAs GitHub repository.
+MAIRA hasn't been published yet. Currently, however, we are working hard on several manuscripts, which we hope to get published until the end of 2019. As soon as we have any news we will notify you right here on MAIRAs GitHub repository.
 
