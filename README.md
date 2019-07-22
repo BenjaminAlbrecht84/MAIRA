@@ -35,11 +35,13 @@ To install MAIRA locally on your computer simply choose an installer program fol
 
 **[Download MAIRA Installers](http://ab.inf.uni-tuebingen.de/data/software/maira/download/welcome.html)** 
 
-To analyze a set of reads you further have to download the MAIRA database and either our pre-computed ELLA databases or our pre-computed LAST databases.
+To analyze a set of reads you further have to download the MAIRA database.
 
--**[Download MAIRA database](http://maira.informatik.uni-tuebingen.de/maira/web_archive/maira.db)**
--**[Download ELLA databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/ella_aligner_db.zip)**
--**[Download LAST databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/last_aligner_db.zip)**
+**[Download MAIRA database](http://maira.informatik.uni-tuebingen.de/maira/web_archive/maira.db)**
+
+Lastly, depending on the aligner you plan tu use, you have to download either our pre-computed ELLA databases or our pre-computed LAST databases.
+
+**[Download ELLA databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/ella_aligner_db.zip)**, **[Download LAST databases](http://maira.informatik.uni-tuebingen.de/maira/web_archive/last_aligner_db.zip)**
 
 # Publication
 
